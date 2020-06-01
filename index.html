@@ -1,0 +1,695 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>actionhero</title>
+	<meta name="description" content="Documentation for actionhero">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">actionhero</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>actionhero</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#actionhero" id="actionhero" style="color: inherit; text-decoration: none;">
+					<h1>Actionhero</h1>
+				</a>
+				<p><em>The reusable, scalable, and quick node.js API server for stateless and stateful applications</em></p>
+				<hr>
+				<div align="center">
+					<img src="https://raw.github.com/actionhero/actionhero/master/public/logo/actionhero-small.png" alt="Actionhero Logo" />
+				</div>
+				<br />
+				<div align="center" class="topLinks">
+					<p><strong><a href="https://npmjs.org/package/actionhero">NPM</a> |
+							<a href="https://www.actionherojs.com">Web Site</a> |
+							<a href="https://docs.actionherojs.com">Latest Docs</a> |
+							<a href="https://github.com/actionhero/actionhero">GitHub</a> |
+							<a href="https://slack.actionherojs.com">Slack</a> |
+					<a href="https://twitter.com/actionherojs">Twitter</a></strong></p>
+				</div>
+				<br />
+				<div align="center" class="topBadges">
+					<p><a href="https://www.npmjs.com/package/actionhero"><img src="https://img.shields.io/npm/v/actionhero.svg?style=flat-square" alt="NPM Version"></a>
+						<a href="https://npmjs.org/package/actionhero"><img src="https://img.shields.io/node/v/actionhero.svg?style=flat-square" alt="Node Version"></a>
+						<a href="https://npmjs.org/package/actionhero"><img src="https://img.shields.io/npm/dm/actionhero.svg?style=flat-square" alt="NPM"></a>
+					<a href="https://david-dm.org/actionhero/actionhero"><img src="https://david-dm.org/actionhero/actionhero.svg?style=flat-square" alt="Dependency Status"></a></p>
+					<p><img src="https://github.com/actionhero/actionhero/workflows/Test/badge.svg" alt="Test">
+						<a href="https://github.com/l0oky/awesome-actionhero"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"></a>
+						<a href="https://app.releasly.co/sites/actionhero/actionhero?utm_source=github_badge"><img src="https://app.releasly.co/assets/badges/badge-green-classic.svg" alt="Follow new releases"></a>
+					<a href="http://slack.actionherojs.com"><img src="https://slack.actionherojs.com/badge.svg" alt="Chat"></a></p>
+				</div>
+				<a href="#who-is-the-actionhero" id="who-is-the-actionhero" style="color: inherit; text-decoration: none;">
+					<h2>Who is the Actionhero?</h2>
+				</a>
+				<p>Actionhero is a multi-transport API Server with integrated cluster capabilities and delayed tasks. The goal of actionhero is to create an easy-to-use toolkit for making <strong>reusable</strong> &amp; <strong>scalable</strong> APIs for HTTP, WebSockets, and more. Clients connected to an actionhero server can <a href="https://www.actionherojs.com/tutorials/actions"><strong>consume the api</strong></a>, <a href="https://www.actionherojs.com/tutorials/file-server"><strong>consume static content</strong></a>, and <a href="https://www.actionherojs.com/tutorials/chat"><strong>communicate with each other</strong></a>. Actionhero is cluster-ready, with built in support for background tasks, 0-downtime deploys, and more. Actionhero provides a simple Async/Await API for managing every type of connection and background task.</p>
+				<p>Currently actionhero supports the following out of the box...</p>
+				<ul>
+					<li><a href="https://www.actionherojs.com/tutorials/web-server">Web Clients</a>: HTTP, HTTPS</li>
+					<li><a href="https://www.actionherojs.com/tutorials/websocket-server">Web Socket Clients</a>: HTTP, HTTPS</li>
+				</ul>
+				<p><a href="https://www.actionherojs.com/tutorials/servers">... and you can also make your own servers and transports.</a></p>
+				<a href="#quick-start" id="quick-start" style="color: inherit; text-decoration: none;">
+					<h2>Quick Start</h2>
+				</a>
+				<pre><code class="language-bash"><span class="hljs-comment"># Generate a new Project</span>
+npx actionhero generate
+npm install
+npm run build <span class="hljs-comment"># &lt;--- new! I compile the TS to JS</span>
+npm run dev <span class="hljs-comment"># &lt;--- new! I use `ts-node` to let you develop on your ts files without compiling</span>
+
+<span class="hljs-comment"># Use the actionhero CLI</span>
+(npx) actionhero generate action --name my_action
+(npx) actionhero generate task --name my_task --queue default --frequency 0
+
+<span class="hljs-comment"># Test</span>
+npm <span class="hljs-built_in">test</span>
+<span class="hljs-comment"># I'll run `prettier` and `build` for you first</span>
+<span class="hljs-comment"># I handle .ts files now!</span>
+
+<span class="hljs-comment"># To deploy your app</span>
+npm run build <span class="hljs-comment"># &lt;--- new! I compile the TS to JS</span>
+npm run start</code></pre>
+				<p>Your new project will come with example actions, tests, and more.</p>
+				<p>Or deploy a free API server now:</p>
+				<p><a href="https://heroku.com/deploy?template=https://github.com/actionhero/actionhero"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku"></a></p>
+				<a href="#learn-more-📚" id="learn-more-📚" style="color: inherit; text-decoration: none;">
+					<h2>Learn More 📚</h2>
+				</a>
+				<ul>
+					<li><a href="https://www.actionherojs.com/get-started">Getting Started @ www.actionherojs.com</a><ul>
+							<li>Actionhero&#39;s website can be found @ <a href="https://github.com/actionhero/www.actionherojs.com/">https://github.com/actionhero/www.actionherojs.com/</a>. If you want to contribute to this site, visit the <a href="https://github.com/actionhero/www.actionherojs.com">related project</a></li>
+						</ul>
+					</li>
+					<li><a href="http://docs.actionherojs.com/">Read the typedoc documentation @ docs.actionherojs.com</a><ul>
+							<li>---&gt; Start with the <a href="https://www.actionherojs.com/tutorials">Tutorials</a> &lt;---</li>
+							<li>Starting with Actionhero version 18, the documentation for each version is included in this repository (and the NPM package) in the <code>/docs</code> folder. The current version of this documentation is also automatically deployed to <a href="https://docs.actionherojs.com">https://docs.actionherojs.com</a>.</li>
+						</ul>
+					</li>
+					<li><a href="https://github.com/l0oky/awesome-actionhero">Find community-based resources</a></li>
+					<li><a href="https://www.actionherojs.com/community">Interact with the Community &amp; View the Release History</a></li>
+					<li><a href="https://github.com/actionhero/actionhero-client">Server Client</a></li>
+				</ul>
+				<a href="#in-depth-tutorials-🎓" id="in-depth-tutorials-🎓" style="color: inherit; text-decoration: none;">
+					<h2>In-depth Tutorials 🎓</h2>
+				</a>
+				<a href="#core-components" id="core-components" style="color: inherit; text-decoration: none;">
+					<h3>Core Components</h3>
+				</a>
+				<ul>
+					<li><a href="https://www.actionherojs.com/tutorials/actions">Actions</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/tasks">Tasks</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/middleware">Middleware</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/initializers">Initializers</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/cli">CLI Commands</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/config">Configuration</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/cluster">Cluster</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/chat">Chat &amp; Realtime Communication</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/file-server">File Server</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/logging">Logging</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/plugins">Plugins</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/servers">Servers</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/localization">Localization &amp; Translation</a></li>
+				</ul>
+				<a href="#server-types" id="server-types" style="color: inherit; text-decoration: none;">
+					<h3>Server Types</h3>
+				</a>
+				<ul>
+					<li><a href="https://www.actionherojs.com/tutorials/web-server">Web Server &amp; Routes</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/websocket-server">WebSocket Server</a></li>
+				</ul>
+				<a href="#testing-deployment-and-operations" id="testing-deployment-and-operations" style="color: inherit; text-decoration: none;">
+					<h3>Testing, Deployment, and Operations</h3>
+				</a>
+				<ul>
+					<li><a href="https://www.actionherojs.com/tutorials/running-actionhero">Running Actionhero</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials#configuration">Development Mode &amp; REPL</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/testing">Testing &amp; SpecHelper</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/production-notes">Production Notes</a></li>
+					<li><a href="https://www.actionherojs.com/tutorials/upgrade-path">Upgrade Path</a></li>
+				</ul>
+				<a href="#sample-projects" id="sample-projects" style="color: inherit; text-decoration: none;">
+					<h2>Sample Projects</h2>
+				</a>
+				<ul>
+					<li><a href="https://github.com/actionhero/actionhero-tutorial">Simple</a></li>
+					<li><a href="https://github.com/actionhero/actionhero-angular-bootstrap-cors-csrf">Elaborate (Angular, Sequelize)</a></li>
+					<li><a href="https://github.com/actionhero/actionhero-react-next-chat">Client Use: React</a></li>
+					<li><a href="https://github.com/actionhero/actionhero-react-native">Client Use: React Native</a></li>
+				</ul>
+				<a href="#who" id="who" style="color: inherit; text-decoration: none;">
+					<h2>Who?</h2>
+				</a>
+				<ul>
+					<li>Many folks <a href="https://github.com/actionhero/actionhero/graphs/contributors">have helped</a> to make Actionhero a reality.</li>
+					<li>If you want to contribute to actionhero, contribute to the conversation on <a href="https://github.com/actionhero/actionhero">github</a> and join us on <a href="https://slack.actionherojs.com">slack</a></li>
+				</ul>
+				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+					<h2>Contributing</h2>
+				</a>
+				<ul>
+					<li>Contributing to Actionhero is easy! <a href="https://github.com/actionhero/actionhero/blob/master/.github/CONTRIBUTING.md">You can learn more about contributing to Actionhero here</a></li>
+					<li>By engaging the with Actionhero community or contributing to this or related projects, you agree to our <a href="https://github.com/actionhero/actionhero/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+				</ul>
+				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+					<h2>License</h2>
+				</a>
+				<p><a href="https://github.com/actionhero/actionhero/blob/master/LICENSE.txt">Apache 2.0</a></p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/action.html">action</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/cache.html">cache</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/chatroom.html">chat<wbr>Room</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/i18n.html">i18n</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/redis.html">redis</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/route.html">route</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/spechelper.html">spec<wbr>Helper</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/task.html">task</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="classes/action.html" class="tsd-kind-icon">Action</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/actionprocessor.html" class="tsd-kind-icon">Action<wbr>Processor</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/actions.html" class="tsd-kind-icon">Actions</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/actionslist.html" class="tsd-kind-icon">Actions<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/api.html" class="tsd-kind-icon">Api</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/cli.html" class="tsd-kind-icon">CLI</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/cachetest.html" class="tsd-kind-icon">Cache<wbr>Test</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/chatroom.html" class="tsd-kind-icon">Chat<wbr>Room</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/connection.html" class="tsd-kind-icon">Connection</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/connections.html" class="tsd-kind-icon">Connections</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/console.html" class="tsd-kind-icon">Console</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/createchatroom.html" class="tsd-kind-icon">Create<wbr>Chat<wbr>Room</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/documentation.html" class="tsd-kind-icon">Documentation</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/exceptions.html" class="tsd-kind-icon">Exceptions</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/generate.html" class="tsd-kind-icon">Generate</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/generateaction.html" class="tsd-kind-icon">Generate<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/generatecli.html" class="tsd-kind-icon">GenerateCLI</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/generateinitializer.html" class="tsd-kind-icon">Generate<wbr>Initializer</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/generateplugin.html" class="tsd-kind-icon">Generate<wbr>Plugin</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/generateserver.html" class="tsd-kind-icon">Generate<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/generatetask.html" class="tsd-kind-icon">Generate<wbr>Task</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/help.html" class="tsd-kind-icon">Help</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/initializer.html" class="tsd-kind-icon">Initializer</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/params.html" class="tsd-kind-icon">Params</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/polyfill.html" class="tsd-kind-icon">Polyfill</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/process.html" class="tsd-kind-icon">Process</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/randomnumber.html" class="tsd-kind-icon">Random<wbr>Number</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/redis.html" class="tsd-kind-icon">Redis</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/resque.html" class="tsd-kind-icon">Resque</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/routes.html" class="tsd-kind-icon">Routes</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/runaction.html" class="tsd-kind-icon">Run<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/server.html" class="tsd-kind-icon">Server</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/servers.html" class="tsd-kind-icon">Servers</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/showdocumentation.html" class="tsd-kind-icon">Show<wbr>Documentation</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/sleeptest.html" class="tsd-kind-icon">Sleep<wbr>Test</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/spechelper.html" class="tsd-kind-icon">Spec<wbr>Helper</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/staticfile.html" class="tsd-kind-icon">Static<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/task.html" class="tsd-kind-icon">Task</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/taskenqueue.html" class="tsd-kind-icon">Task<wbr>Enqueue</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/tasks.html" class="tsd-kind-icon">Tasks</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/validationtest.html" class="tsd-kind-icon">Validation<wbr>Test</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/version.html" class="tsd-kind-icon">Version</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/webserver.html" class="tsd-kind-icon">Web<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/websocketserver.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/actionsapi.html" class="tsd-kind-icon">Actions<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/chatroomapi.html" class="tsd-kind-icon">Chat<wbr>Room<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/configinterface.html" class="tsd-kind-icon">Config<wbr>Interface</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/connectionmiddleware.html" class="tsd-kind-icon">Connection<wbr>Middleware</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/connectionparams.html" class="tsd-kind-icon">Connection<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/connectionsapi.html" class="tsd-kind-icon">Connections<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/documentationapi.html" class="tsd-kind-icon">Documentation<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/exceptionhandlerapi.html" class="tsd-kind-icon">Exception<wbr>HandlerAPI</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/initializers.html" class="tsd-kind-icon">Initializers</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/input.html" class="tsd-kind-icon">Input</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/inputs.html" class="tsd-kind-icon">Inputs</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/paramsapi.html" class="tsd-kind-icon">Params<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/redisapi.html" class="tsd-kind-icon">Redis<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/resqueapi.html" class="tsd-kind-icon">Resque<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/routesapi.html" class="tsd-kind-icon">Routes<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/runner.html" class="tsd-kind-icon">Runner</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/runnerinputs.html" class="tsd-kind-icon">Runner<wbr>Inputs</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/serverconfig.html" class="tsd-kind-icon">Server<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/serversapi.html" class="tsd-kind-icon">Servers<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/spechelperapi.html" class="tsd-kind-icon">Spec<wbr>Helper<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/staticfileapi.html" class="tsd-kind-icon">Static<wbr>File<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskapi.html" class="tsd-kind-icon">Task<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskdata.html" class="tsd-kind-icon">Task<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#packagejson" class="tsd-kind-icon">PackageJSON</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#actionheroversion" class="tsd-kind-icon">actionhero<wbr>Version</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#api" class="tsd-kind-icon">api</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#config" class="tsd-kind-icon">config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#configpaths" class="tsd-kind-icon">config<wbr>Paths</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#db" class="tsd-kind-icon">db</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#env" class="tsd-kind-icon">env</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#host" class="tsd-kind-icon">host</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#id" class="tsd-kind-icon">id</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#loggers" class="tsd-kind-icon">loggers</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#maxbackoff" class="tsd-kind-icon">max<wbr>Backoff</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#maxeventloopdelay" class="tsd-kind-icon">max<wbr>Event<wbr>Loop<wbr>Delay</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#maxmemoryalloted" class="tsd-kind-icon">max<wbr>Memory<wbr>Alloted</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#maxresquequeuelength" class="tsd-kind-icon">max<wbr>Resque<wbr>Queue<wbr>Length</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#options" class="tsd-kind-icon">options</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#os" class="tsd-kind-icon">os</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#packagejson" class="tsd-kind-icon">packageJSON</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#packagejson" class="tsd-kind-icon">package<wbr>Json</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#password" class="tsd-kind-icon">password</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#path" class="tsd-kind-icon">path</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#pid" class="tsd-kind-icon">pid</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#port" class="tsd-kind-icon">port</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#projectroot" class="tsd-kind-icon">project<wbr>Root</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#taskmodule" class="tsd-kind-icon">task<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#title" class="tsd-kind-icon">title</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#typescript" class="tsd-kind-icon">typescript</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#arraystartingmatch" class="tsd-kind-icon">array<wbr>Starting<wbr>Match</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#arrayunique" class="tsd-kind-icon">array<wbr>Unique</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#asyncreadlink" class="tsd-kind-icon">async<wbr>Read<wbr>Link</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#asyncstats" class="tsd-kind-icon">async<wbr>Stats</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#asyncwaterfall" class="tsd-kind-icon">async<wbr>Waterfall</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#buildconfig" class="tsd-kind-icon">build<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#buildconsolelogger" class="tsd-kind-icon">build<wbr>Console<wbr>Logger</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#buildfilelogger" class="tsd-kind-icon">build<wbr>File<wbr>Logger</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#clearpidfile" class="tsd-kind-icon">clear<wbr>Pid<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#collapseobjecttoarray" class="tsd-kind-icon">collapse<wbr>Object<wbr>ToArray</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#createdirsafely" class="tsd-kind-icon">create<wbr>Dir<wbr>Safely</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#createfilesafely" class="tsd-kind-icon">create<wbr>File<wbr>Safely</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#createlinkfilesafely" class="tsd-kind-icon">create<wbr>Linkfile<wbr>Safely</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#createsymlinksafely" class="tsd-kind-icon">create<wbr>Symlink<wbr>Safely</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#determineid" class="tsd-kind-icon">determine<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#determinenodeenv" class="tsd-kind-icon">determine<wbr>Node<wbr>Env</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#determineprojectroot" class="tsd-kind-icon">determine<wbr>Project<wbr>Root</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#direxists" class="tsd-kind-icon">dir<wbr>Exists</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#ensurenotsheaderfiles" class="tsd-kind-icon">ensure<wbr>NoTs<wbr>Header<wbr>Files</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#eventloopdelay" class="tsd-kind-icon">event<wbr>Loop<wbr>Delay</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#fileexists" class="tsd-kind-icon">file<wbr>Exists</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#filterobjectforlogging" class="tsd-kind-icon">filter<wbr>Object<wbr>For<wbr>Logging</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getexternalipaddress" class="tsd-kind-icon">get<wbr>ExternalIPAddress</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#hashmerge" class="tsd-kind-icon">hash<wbr>Merge</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isplainobject" class="tsd-kind-icon">is<wbr>Plain<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#istypescript" class="tsd-kind-icon">is<wbr>Typescript</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#log" class="tsd-kind-icon">log</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#main" class="tsd-kind-icon">main</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#parsecookies" class="tsd-kind-icon">parse<wbr>Cookies</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#parseheadersforclientaddress" class="tsd-kind-icon">parse<wbr>Headers<wbr>For<wbr>Client<wbr>Address</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#parseipv6uri" class="tsd-kind-icon">parseIPv6URI</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#removelinkfilesafely" class="tsd-kind-icon">remove<wbr>Linkfile<wbr>Safely</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#replacedistwithsrc" class="tsd-kind-icon">replace<wbr>Dist<wbr>With<wbr>Src</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#sanitizeid" class="tsd-kind-icon">sanitize<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#sleep" class="tsd-kind-icon">sleep</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#sortglobalmiddleware" class="tsd-kind-icon">sort<wbr>Global<wbr>Middleware</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#sortnumber" class="tsd-kind-icon">sort<wbr>Number</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#sourcerelativelinkpath" class="tsd-kind-icon">source<wbr>Relative<wbr>Link<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#stringifyextramessagepropertiesforconsole" class="tsd-kind-icon">stringify<wbr>Extra<wbr>Message<wbr>Properties<wbr>For<wbr>Console</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#writepidfile" class="tsd-kind-icon">write<wbr>Pid<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#default" class="tsd-kind-icon">DEFAULT</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#production" class="tsd-kind-icon">production</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#test" class="tsd-kind-icon">test</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#utils" class="tsd-kind-icon">utils</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
